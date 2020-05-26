@@ -1,7 +1,9 @@
 <launch>
-   <node pkg="sicknav350" type="sicknav350_node" name="sicknav350" output="screen" >
+   <node pkg="sicknav350" type="sicknav350_node" name="sicknav350" output="screen" respawn="true">
     <param name="publish_tf" value="true" />
     <param name="publish_odom_" value="true" />
+    <param name="ipaddress" value="10.0.0.2" />
+    <param name="port" value="2112" />
     <param name="publish_scan" value="true" />
   </node>
 </launch>
